@@ -1,0 +1,2 @@
+- To install packages in requirements.txt run `pip install -r requirements.txt`
+- To run gunicorn in production mode `gunicorn -w 4 -b 0.0.0.0:5000 app:app`
