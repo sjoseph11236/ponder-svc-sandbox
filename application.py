@@ -7,21 +7,21 @@ import json
 
 load_dotenv()
 
-app = Flask(__name__)
-CORS(app)
+application = Flask(__name__)
+CORS(application)
 
-@app.route("/")
+@application.route("/")
 def home():
     return "Ponder App"
 
-@app.route("/test")
+@application.route("/test")
 def test():
     with open("seed.json") as seed_data:
         data = json.load(seed_data)
     return jsonify(data)
     
 
-@app.route("/playlists")
+@application.route("/playlists")
 def get_playlists():
     results = []    
     next_page_token = None
@@ -57,4 +57,4 @@ def get_playlists():
     return results
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    application.run(host="0.0.0.0", port=5000, debug=True)
