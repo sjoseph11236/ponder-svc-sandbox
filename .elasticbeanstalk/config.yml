@@ -1,6 +1,6 @@
 branch-defaults:
   main:
-    environment: flask-env
+    environment: Ponder-svc-env
 global:
   application_name: ponder-svc
   branch: null
