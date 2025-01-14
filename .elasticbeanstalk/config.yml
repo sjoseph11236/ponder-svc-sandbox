@@ -1,6 +1,6 @@
 branch-defaults:
   main:
-    environment: Ponder-svc-env
+    environment: Ponder-svc-sandbox-env
 global:
   application_name: ponder-svc
   branch: null
